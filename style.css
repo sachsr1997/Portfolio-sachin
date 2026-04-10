@@ -1,0 +1,312 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;       /* keep navbar at top */
+  top: 0;
+  left: 0;
+  width: 90%;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background: #0f172a;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* SECTION */
+.section {
+  padding: 10px 80px;
+  margin-bottom: 80px;
+  scroll-margin-top: 200px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* HERO */
+.hero-container {
+  margin-top: 80PX;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text span {
+  color: #38bdf8;
+}
+
+#head-text-exp {
+  color: #38bdf8;
+  margin-left: 80px;
+}
+
+#head-text-skill {
+  color: #38bdf8;
+  margin-left: 80px;
+}
+
+#head-text-pro {
+  color: #38bdf8;
+  margin-left: 80px;
+}
+
+#head-text-con {
+  color: #38bdf8;
+  margin-left: 80px;
+}
+
+
+.hero-image img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* BUTTONS */
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+  padding: 8px 18px;
+  text-decoration: none;
+  margin-right: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+/* EXPERIENCE */
+
+.experience-box {
+  border: 1px solid #11356f;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #1a475a;
+  border-radius: 25px;
+  scroll-margin-top: 100px;
+}
+
+.experience-box h4 {
+  color: #94a3b8;
+  margin: 5px 0;
+}
+
+.experience-box span {
+  font-size: 12px;
+  color: #64748b;
+}
+
+/* SKILLS */
+.skill {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.bar {
+  height: 6px;
+  background: #1e293b;
+}
+
+.fill {
+  height: 6px;
+  background: #38bdf8;
+}
+
+.fill.html { width: 90%; }
+.fill.css { width: 80%; }
+.fill.js { width: 70%; }
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+/* PROJECTS */
+.projects {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.card {
+  width: 48%;
+  border: 1px solid #11356f;
+  border-radius: 25px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: #1a475a;
+}
+
+/* PROJECT DETAILS SCROLL ONLY */
+.project-details {
+  max-height: 100px;
+  overflow: hidden;
+  margin-top: 10px;
+  padding-right: 5px;
+}
+
+.project-details:hover {
+  overflow-y: auto;
+}
+
+.project-details ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.project-details li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* SCROLLBAR STYLE */
+.project-details::-webkit-scrollbar {
+  width: 8px;
+}
+
+.project-details::-webkit-scrollbar-thumb {
+  background-color: rgba(56, 189, 248, 0.6); 
+  border-radius: 4px;
+}
+
+.project-details::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.footer-icon {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #38bdf8;       /* Keep it matching your existing color theme */
+  font-size: 20px;       /* Size of icon */
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.footer-icon {
+  color: #0ea5e9; 
+  margin: 0 30px;      /* Color changes slightly on hover */
+}
+
+.fa-envelope {
+  color: red;
+}
+
+.fa-github {
+  color: white;
+}
+
+.fa-phone {color: green;}
+
+.fa-file-download {
+  color: wheat;
+}
+
+/* Individual skill box */
+/* Individual skill box */
+/* Container */
+.skill-boxes {
+  display: flex;
+  flex-direction: row;   /* ensures horizontal layout */
+  gap: 15px;             /* spacing between boxes */
+  margin-top: 00px;
+  margin-left: 00px;
+}
+
+/* Individual boxes */
+.skill-box {
+  border: 2px solid #38bdf8;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: #38bdf8;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;   /* prevents text breaking */
+  background: transparent;
+  transition: 0.2s ease;
+
+}
+
+.skill-box:hover {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+.lines {
+  border: none;
+  height: 2px;
+  background-color: #3f5574; /* your theme color */
+  margin: 5px 80px;
+  margin-top: -10px;
+}
+
+#contact h2 {
+  color: #38bdf8;
+}
+
+#contact span {
+  color: #38bdf8;
+}
+
+/* Container */
+.contact-items {
+  margin-top: 20px;
+}
+
+/* Each block */
+.contact-block {
+  margin-bottom: 15px;
+}
+
+/* Label (Email, Phone, etc.) */
+.contact-label {
+  font-size: 14px;
+  color: #94a3b8;
+  margin-bottom: 5px;
+}
+
+/* Link styling */
+.contact-link {
+  text-decoration: none;
+  color: #38bdf8;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Icon */
+.contact-link i {
+  font-size: 16px;
+}
